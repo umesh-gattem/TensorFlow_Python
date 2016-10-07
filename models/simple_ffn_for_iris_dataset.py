@@ -13,8 +13,8 @@ input_data = tf.placeholder("float", name='Input')
 output_data = tf.placeholder("float", name='Output')
 
 weights = {
-    'weight1': tf.Variable(tf.random_normal([4, 7], dtype=tf.float32), name='Weight1'),
-    'weight2': tf.Variable(tf.random_normal([7, 6], dtype=tf.float32), name='Weight2'),
+    'weight1': tf.Variable(tf.random_normal([4, 8], dtype=tf.float32), name='Weight1'),
+    'weight2': tf.Variable(tf.random_normal([8, 6], dtype=tf.float32), name='Weight2'),
     'weight3': tf.Variable(tf.random_normal([6, 3], dtype=tf.float32), name='Weight3'),
 }
 

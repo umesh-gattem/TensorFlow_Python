@@ -13,7 +13,7 @@ def read_csv(filename, split_ratio):
     train_data_df = train_data_df.iloc[:, :column_drop]
     test_label_df = test_data_df.iloc[:, column_drop:]
     test_data_df = test_data_df.iloc[:, :column_drop]
-# Convert dataframe to list
+    # Convert dataframe to list
     train_data_input = np.array(train_data_df)
     train_data_output = np.array(train_label_df)
     test_data_input = np.array(test_data_df)

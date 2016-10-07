@@ -12,7 +12,6 @@ display_step = 10
 no_of_inputs = 784  # no of input pixels
 no_of_outputs = 10  # no of outputs
 drop_out = 0.75  # keep probability
-print("hai")
 
 input_data = tf.placeholder(tf.float32, [None, 784], name='Input')
 output_data = tf.placeholder(tf.float32, [None, 10], name='Output')

@@ -53,7 +53,6 @@ def read_csv(filename, split_ratio, delimiter=',', normalize=False, dtype=None, 
     :param describe: Describe Input Data
     :return: return train_data, train_label, test_data, test_label based on return_as_dataframe
     """
-    print("Reached data")
     df = pd.read_csv(filename, sep=delimiter, index_col=index_col, header=header, dtype=dtype, skiprows=skiprows)
     if describe:
         print(df.describe())
