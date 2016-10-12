@@ -2,7 +2,7 @@ import tensorflow as tf
 from utils import read_iris_data_csv_file
 
 train_data_input, train_data_output, test_data_input, test_data_output = read_iris_data_csv_file.read_csv(
-    '../datasets/iris_data.csv', split_ratio=50)
+    '../datasets/iris_data.csv', split_ratio=70)
 no_of_inputs = len(train_data_input)
 learning_rate = 0.9
 epochs = 1000
@@ -13,8 +13,8 @@ input_data = tf.placeholder("float", name='Input')
 output_data = tf.placeholder("float", name='Output')
 
 weights = {
-    'weight1': tf.Variable(tf.random_normal([4, 8], dtype=tf.float32), name='Weight1'),
-    'weight2': tf.Variable(tf.random_normal([8, 6], dtype=tf.float32), name='Weight2'),
+    'weight1': tf.Variable(tf.random_normal([4, 7], dtype=tf.float32), name='Weight1'),
+    'weight2': tf.Variable(tf.random_normal([7, 6], dtype=tf.float32), name='Weight2'),
     'weight3': tf.Variable(tf.random_normal([6, 3], dtype=tf.float32), name='Weight3'),
 }
 
