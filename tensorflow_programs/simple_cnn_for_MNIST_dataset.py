@@ -1,5 +1,5 @@
 import tensorflow as tf
-from my_utils import rztutils
+from utils import rztutils
 
 train_data, train_label, test_data, test_label = rztutils.read_csv('mnist_dataset.csv', split_ratio=90, delimiter=";", label_vector=True)
 

@@ -1,5 +1,5 @@
 import tensorflow as tf
-from my_utils import rztutils_for_iris_dataset
+from utils import rztutils_for_iris_dataset
 
 
 train_data_input, train_data_output, test_data_input, test_data_output = rztutils_for_iris_dataset.read_csv(
