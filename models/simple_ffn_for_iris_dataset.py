@@ -1,5 +1,5 @@
 import tensorflow as tf
-from utils import read_iris_data_csv_file
+from my_utils import read_iris_data_csv_file
 
 train_data_input, train_data_output, test_data_input, test_data_output = read_iris_data_csv_file.read_csv(
     '../datasets/iris_data.csv', split_ratio=70)
